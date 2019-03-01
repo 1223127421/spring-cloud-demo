@@ -22,6 +22,10 @@
         <module>config-client</module>
         <module>config-bus-server</module>
         <module>config-bus-client</module>
+        <module>user-service</module>
+        <module>gateway-service</module>
+        <module>admin-server</module>
+        <module>admin-client</module>
     </modules>
 
     <parent>
