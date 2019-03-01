@@ -19,6 +19,7 @@
         <module name="eureka-ribbon-hystrix-client" />
         <module name="eureka-server" />
         <module name="gateway-service" />
+        <module name="spring-security" />
         <module name="user-service" />
       </profile>
     </annotationProcessing>
@@ -38,6 +39,7 @@
       <module name="eureka-ribbon-hystrix-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
+      <module name="spring-security" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
