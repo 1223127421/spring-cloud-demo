@@ -14,6 +14,7 @@
         <module name="config-server" />
         <module name="demo-member" />
         <module name="demo-order" />
+        <module name="demo-yanzhengma" />
         <module name="eureka-client" />
         <module name="eureka-feign-client" />
         <module name="eureka-feign-hystrix-client" />
@@ -25,6 +26,27 @@
         <module name="user-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-client" target="1.8" />
+      <module name="admin-server" target="1.8" />
+      <module name="config-bus-client" target="1.8" />
+      <module name="config-bus-server" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="demo-member" target="1.8" />
+      <module name="demo-order" target="1.8" />
+      <module name="demo-yanzhengma" target="1.8" />
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-feign-client" target="1.8" />
+      <module name="eureka-feign-hystrix-client" target="1.8" />
+      <module name="eureka-ribbon-client" target="1.8" />
+      <module name="eureka-ribbon-hystrix-client" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="spring-cloud-demo" target="1.8" />
+      <module name="spring-security" target="1.8" />
+      <module name="user-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

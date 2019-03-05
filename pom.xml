@@ -29,6 +29,7 @@
         <module>spring-security</module>
         <module>demo-order</module>
         <module>demo-member</module>
+        <module>demo-yanzhengma</module>
     </modules>
 
     <parent>
