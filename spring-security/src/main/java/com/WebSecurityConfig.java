@@ -57,7 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //任何以“/db/”开头的URL都要求用户同时拥有“ROLE_ADMIN”和“ROLE_DBA”。由于我们使用的是hasRole表达式，因此我们不需要指定“ROLE_”前缀。
                 .antMatchers("/db/**").access("hasRole('ADMIN') and hasRole('DBA')")
                        //确保对我们的应用程序的任何请求都要求用户进行身份验证
-                        .anyRequest().authenticated()
+//                        .anyRequest().authenticated()
                 .and()
                 //允许用户使用基于表单的登录进行身份验证
                 .formLogin()

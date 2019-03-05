@@ -12,6 +12,8 @@
         <module name="config-bus-server" />
         <module name="config-client" />
         <module name="config-server" />
+        <module name="demo-member" />
+        <module name="demo-order" />
         <module name="eureka-client" />
         <module name="eureka-feign-client" />
         <module name="eureka-feign-hystrix-client" />
@@ -32,6 +34,8 @@
       <module name="config-bus-server" options="-parameters" />
       <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="demo-member" options="-parameters" />
+      <module name="demo-order" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-feign-client" options="-parameters" />
       <module name="eureka-feign-hystrix-client" options="-parameters" />

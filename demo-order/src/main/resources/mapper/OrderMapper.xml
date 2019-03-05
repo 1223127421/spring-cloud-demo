@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "
+http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.OrderDao">
+
+    <resultMap id="BaseResultMap" type="com.entity.Order">
+        <result column="id" property="id" />
+        <result column="money" property="money" />
+    </resultMap>
+
+    <select id="getAllList" resultMap="BaseResultMap">
+        SELECT * FROM d_order
+    </select>
+
+</mapper>
