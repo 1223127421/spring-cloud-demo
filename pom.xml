@@ -30,6 +30,7 @@
         <module>demo-order</module>
         <module>demo-member</module>
         <module>demo-yanzhengma</module>
+        <module>swagger</module>
     </modules>
 
     <parent>
