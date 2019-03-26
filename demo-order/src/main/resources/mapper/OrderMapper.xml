@@ -5,11 +5,15 @@ http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
     <resultMap id="BaseResultMap" type="com.entity.Order">
         <result column="id" property="id" />
-        <result column="money" property="money" />
+        <!--<result column="money" property="money" />-->
     </resultMap>
 
+    <insert id="insert" parameterType="com.entity.Order">
+        insert into d_order (money) values(#{money})
+    </insert>
+
     <select id="getAllList" resultMap="BaseResultMap">
-        SELECT * FROM d_order
+        SELECT id FROM d_order
     </select>
 
 </mapper>

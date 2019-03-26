@@ -31,6 +31,7 @@
         <module>demo-member</module>
         <module>demo-yanzhengma</module>
         <module>swagger</module>
+        <module>eureka-test</module>
     </modules>
 
     <parent>

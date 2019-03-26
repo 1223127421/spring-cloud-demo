@@ -10,7 +10,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Describe
  */
 @SpringBootApplication
-@EnableSwagger2
 public class SwaggerApplication {
     public static void main(String[] args) {
         SpringApplication.run(SwaggerApplication.class, args);

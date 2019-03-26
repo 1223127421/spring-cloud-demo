@@ -21,20 +21,28 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class Swagger2Config {
 
+    /**
+     * 通过 createRestApi函数来构建一个DocketBean函数名
+     */
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
+                .apiInfo(apiInfo())//调用apiInfo方法,创建一个ApiInfo实例,里面是展示在文档页面信息内容
                 .select()
-                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                //控制暴露出去的路径下的实例
+                //如果某个接口不想暴露,可以使用以下注解
+                //@ApiIgnore 这样,该接口就不会暴露在 swagger2 的页面下
+                .apis(RequestHandlerSelectors.basePackage("com"))
                 .paths(PathSelectors.any())
                 .build();
     }
-
+    //构建 api文档的详细信息函数
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
+                //页面标题
                 .title("Swagger API")
-                .description("test")
+                //描述
+                .description("API 描述")
                 .termsOfServiceUrl("")
                 .contact(new Contact("wd", "", ""))
                 .version("2.0")

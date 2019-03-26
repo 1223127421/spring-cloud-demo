@@ -13,4 +13,6 @@ import java.util.Map;
 public interface OrderService {
 
     public List<Order> getAllList();
+
+    public void insert(Order order);
 }

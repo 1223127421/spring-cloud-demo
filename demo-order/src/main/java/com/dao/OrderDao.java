@@ -2,6 +2,7 @@ package com.dao;
 
 import com.entity.Order;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -14,4 +15,6 @@ import java.util.List;
 public interface OrderDao {
 
     public List<Order> getAllList();
+
+    public void insert(Order order);
 }

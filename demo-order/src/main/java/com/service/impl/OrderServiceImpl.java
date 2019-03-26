@@ -5,6 +5,7 @@ import com.entity.Order;
 import com.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -22,5 +23,11 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public List<Order> getAllList() {
         return orderDao.getAllList();
+    }
+
+    @Transactional
+    public void insert(Order order) {
+        orderDao.insert(order);
+
     }
 }
