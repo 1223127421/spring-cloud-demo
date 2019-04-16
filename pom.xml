@@ -34,6 +34,7 @@
         <module>demo-yanzhengma</module>
         <module>swagger</module>
         <module>eureka-test</module>
+        <module>rabbit-mq</module>
     </modules>
 
     <parent>
