@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb42afbc-091e-4c6c-b838-998832131873" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="7b48c2b3-1e89-46ac-9fb9-a96c3d75b450" name="ignore" comment="" />
@@ -43,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/demo-order/src/main/java/com/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="79">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -123,8 +122,8 @@
         <option value="$PROJECT_DIR$/demo-order/src/main/resources/mapper/Order2Mapper.xml" />
         <option value="$PROJECT_DIR$/demo-order/src/main/java/com/service1/OrderService1.java" />
         <option value="$PROJECT_DIR$/demo-order/src/main/java/com/DemoOrderApplication.java" />
-        <option value="$PROJECT_DIR$/demo-order/src/main/java/com/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/demo-order/src/main/java/com/service2/OrderService2.java" />
+        <option value="$PROJECT_DIR$/demo-order/src/main/java/com/service/impl/OrderServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -404,7 +403,7 @@
       <workItem from="1555394088873" duration="1148000" />
       <workItem from="1555916031729" duration="11472000" />
       <workItem from="1555999447886" duration="2324000" />
-      <workItem from="1556009722667" duration="728000" />
+      <workItem from="1556009722667" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1552012405970</created>
@@ -431,7 +430,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73602000" />
+    <option name="totallyTimeSpent" value="74527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,6 +443,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29155496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -839,7 +839,7 @@
     <entry file="file://$PROJECT_DIR$/demo-order/src/main/java/com/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
         </state>
       </provider>
     </entry>
