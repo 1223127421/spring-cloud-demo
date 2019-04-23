@@ -1,0 +1,34 @@
+server:
+  port: 8769
+spring:
+  application:
+    name: config-server
+
+#1.从本地读取配置文件信息
+# active=native来配置config server从本地读取配置读配置的路径为classpath下的shared目录。
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: classpath:/shared
+
+#2.从远程Git仓库读取配置文件
+# uri为GitHub仓库的地址，
+#search-paths为远程仓库中配置文件所在路径，
+#username和password为GitHub仓库的登录名和密码，如果是私有的仓库是必须的，公开的仓库不需要，
+#default-label为仓库的分支，本例是从master读取。
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/1223127421/config-server.git
+          search-paths: shared
+          default-label: master
+
+#config-server向eureka-server注册，将config-server集群化，从而达到高可用
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

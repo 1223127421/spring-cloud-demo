@@ -1,14 +1,14 @@
 package com.service2;
 
-import com.dao.OrderDao;
+import com.dao.Order2Dao;
 import com.entity.Order;
-import com.service1.AddOrder2Event;
-import com.sun.tools.corba.se.idl.constExpr.Or;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationListener;
-import org.springframework.context.event.EventListener;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.concurrent.Future;
 
 /**
  * @Author: wangzhuyi
@@ -20,11 +20,21 @@ import org.springframework.transaction.annotation.Transactional;
 public class OrderService2 {
 
     @Autowired
-    private OrderDao orderDao;
+    private Order2Dao order2Dao;
 
-    @Transactional
+    //    @Transactional
     public void insert(Order order) {
-        orderDao.insert(order);
+        order2Dao.insert(order);
+        int a = 1 / 0;
     }
 
+    @Async
+    @Transactional
+    public Future<String> insert2(Order order) {
+        System.out.println("2");
+        order2Dao.insert(order);
+        int a = 1 / 0;
+        System.out.println("22");
+        return new AsyncResult<>("aaaaa");
+    }
 }

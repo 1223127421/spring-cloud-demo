@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-client
+  profiles:
+    active: dev
+#  cloud:
+#    config:
+#      uri: http://localhost:8769
+      #  没有读取成功则执行快速失败（fail-fast）
+#      fail-fast: true
+
+#  向service-id为config-server的配置服务读取配置文件
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true
+        service-id: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

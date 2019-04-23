@@ -6,6 +6,7 @@ import com.entity.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +25,7 @@ public class OrderService1{
     @Autowired
     private CommonEventPublisher commonEventPublisher;
 
+    @Async
     @Transactional
     public void insert(Order order) {
         orderDao.insert(order);
